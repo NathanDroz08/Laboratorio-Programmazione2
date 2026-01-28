@@ -1,2 +1,2 @@
-# Laboratorio-Programmazion2
+# Laboratorio-Programmazione2
 MAUI
