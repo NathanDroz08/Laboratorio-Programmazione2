@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppQuiz.ResultPage"
+             Title="ResultPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="QUIZ COMPLETATO!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="24"/>
+        
+        <Label x:Name="FinalScoreLabel"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               FontSize="18"
+               TextColor="{StaticResource Primary}"/>
+    </VerticalStackLayout>
+</ContentPage>

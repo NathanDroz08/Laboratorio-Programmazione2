@@ -1,0 +1,60 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Equation.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Risolutore Equazioni"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Grid
+                RowSpacing="15"
+                ColumnSpacing="10"
+                Margin="0,20,0,20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Text="Coefficente A:" Grid.Row="0" Grid.Column="0" VerticalOptions="Center"/>
+                <Entry x:Name="EntA" Placeholder="Inserisci a" Grid.Row="0" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Text="Coefficente B:" Grid.Row="1" Grid.Column="0" VerticalOptions="Center"/>
+                <Entry x:Name="EntB" Placeholder="Inserisci b" Grid.Row="1" Grid.Column="1" Keyboard="Numeric"/>
+
+                <Label Text="Coefficente C:" Grid.Row="2" Grid.Column="0" VerticalOptions="Center"/>
+                <Entry x:Name="EntC" Placeholder="Inserisci c" Grid.Row="2" Grid.Column="1" Keyboard="Numeric"/>
+            </Grid>
+
+            <Button
+                x:Name="CounterBtn"
+                Text="CALCOLA RADICI" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Label
+                x:Name="LblRisultato"
+                Text="Inserisci i valori iniziali"
+                HorizontalTextAlignment="Center"
+                Margin="0,20,0,0"
+                BackgroundColor="LightGray"
+                Padding="20,20,20,20"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -37,7 +37,7 @@
 
             <Label
                 x:Name="lblRisultato"
-                Text="Risultato:"
+                Text="Risultato: " 
                 FontSize="20"
                 HorizontalOptions="Center"
                 Margin="0,20,0,0"/>

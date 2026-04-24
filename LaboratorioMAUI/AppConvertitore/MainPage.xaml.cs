@@ -18,7 +18,7 @@
 
             double euro = franchi * 1.07;
 
-
+            
         }
     }
 
